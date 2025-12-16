@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CSS_XPath_Sequential_Suite" parallel="true" thread-count="1">
+
+
+    <test name="Selenide Tests" >
+        <classes>
+            <class name="tests.AddRecordTest"/>
+            <class name="tests.ClickMeTest"/>
+        </classes>
+    </test>
+
+</suite>
