@@ -1,7 +1,6 @@
 package Base;
 
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.*;
 
 
 public class BaseTests {
@@ -16,4 +15,13 @@ public class BaseTests {
         System.out.println("=======Before method======");
     }
 
+    @AfterMethod
+    public void afterMethod() {
+        System.out.println("=======After method======");
+    }
+
+    @AfterTest
+    public void afterTest() {
+        System.out.println("=======After test======");
+    }
 }
